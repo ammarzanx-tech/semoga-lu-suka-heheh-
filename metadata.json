@@ -1,0 +1,6 @@
+{
+  "name": "Happy Birthday, Davina Radyanka",
+  "description": "Ucapan selamat ulang tahun spesial dan surat interaktif untuk Davina Radyanka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

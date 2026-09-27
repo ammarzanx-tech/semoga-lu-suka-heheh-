@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-kawaii: 'Fredoka', "Comic Sans MS", cursive, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #183148;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    user-select: none;
+  }
+}
+
+/* Pastel blue & white checkerboard background matching the video */
+.bg-checkerboard {
+  background-color: #f5faff;
+  background-image: repeating-conic-gradient(
+    #e5f2fc 0% 25%,
+    #f5faff 0% 50%
+  );
+  background-position: 0 0;
+  background-size: 52px 52px;
+}
+
+.font-serif-title {
+  font-family: var(--font-serif);
+}
+
+.font-kawaii {
+  font-family: var(--font-kawaii);
+}
+
+/* Custom subtle scrollbar for the letter card */
+.letter-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.letter-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 12px;
+}
+
+.letter-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.45);
+  border-radius: 9999px;
+}
+
+.letter-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 116, 139, 0.7);
+}
